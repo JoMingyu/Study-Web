@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Text</title>
+
+        <meta charset="UTF-8">
+
+        <style>
+        p {
+            color: salmon;
+            direction: ltr;
+            /* 텍스트가 써지는 순서. ltr과 rtl이 있음 */
+            letter-spacing: -1px;
+            word-spacing: 2px;
+            /* 문자 사이의 간격(letter-spacing)과 단어 사이의 간격(word-spacing) */
+            text-indent: 10px;
+            /* 단락의 첫 줄이 들여쓰기할지 안 할지를 설정함. 기본적으로 들여쓰기가 설정되어있지 않음 */
+            text-align: left;
+            /* 텍스트의 수평 방향 정렬을 설정. 이 정렬 방향은 text-direction 속성과는 상관없이 우선적으로 적용됨 */
+            text-decoration: underline;
+            text-transform: uppercase;
+            /* 텍스트에 포함된 영문자에 대한 대소문자 설정. upper/lowercase, capitalize */
+            line-height: 0.9;
+            /* 텍스트의 줄 간격 */
+            /* text-shadow: 2px 1px #3399CC; */
+            /* 이 외에 text-shadow, unicode-bidi, vertical-align, white-space가 있음 */
+        }
+        </style>
+    </head>
+    <body>
+        <p>Hello!</p>
+    </body>
+</html>
