@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        CSS 스타일을 적용하기 위해
+
+        1. 지금까지 해왔던 인라인 스타일(Inline style)
+        2. 내부 스타일 시트(Internal style sheet)
+        3. 외부 스타일 시트(External style sheet)
+        를 사용할 수 있음
+    -->
+    <head>
+        <title>CSS Start</title>
+
+        <meta charset="UTF-8">
+        
+        <!--
+            내부 스타일 시트
+            <html>의 <head>에서 선언되어야 함
+
+            CSS의 문법은 선택자(selector)와 선언부(declaratives)로 구성됨
+            선택자는 CSS를 적용하고자 하는 HTML 엘리먼트를 가리킴
+            선언부는 하나 이상의 선언들을 세미콜론(;)으로 구분하여 포함할 수 있으며, 중괄호를 이용해 전체를 둘러쌈
+            선언부의 각 선언은 속성명과 속성값을 가지며, 그 둘은 콜론으로 연결함
+        -->
+        <style>
+            body {
+                background-color: aliceblue;
+            }
+            /* 스타일 시트 내부의 주석은 이처럼 사용함 */
+            h3 {
+                color: red;
+            }
+        </style>
+
+        <!-- 외부 스타일 시트. 이것도 <head>에 선언되어야 함. 이 CSS에서는 p 태그의 컬러를 지정해 주었음 -->
+        <link rel="stylesheet" type="text/css" href="./CSS Start.css">
+    </head>
+    <body>
+        <h2 style="color:salmon">Inline Styled</h2>
+        <!-- 인라인 스타일 -->
+        
+        <h3>Internal Styled</h3>
+        <!-- 내부 스타일 -->
+
+        <p>External Styled</p>
+        <!-- 외부 스타일 -->
+
+        <!--
+            스타일 적용이 혼합되어 사용될 경우,
+            인라인 스타일 → 내부/외부 스타일 시트 → 브라우저 기본 스타일 순서에 따라 결정됨
+
+            따라서 스타일 적용은 외부 스타일 시트를 사용하는 것이 가장 안정적이지만,
+            CSS를 분할하면 보기 힘드므로 TIL에서는 내부 스타일 시트를 사용하자
+        -->
+    </body>
+</html>
