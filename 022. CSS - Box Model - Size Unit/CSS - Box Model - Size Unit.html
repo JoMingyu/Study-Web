@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Box Model - Size Unit</title>
+
+        <meta charset="utf-8">
+
+        <!--
+            크기 단위에는 %, em, rem, px, cm, mm, inch 등이 있음
+            그 중에서도 가장 많이 쓰이는 크기 단위는 %, em, rem, px
+        -->
+        <style>
+            #large {
+                font-size: 200%;
+                /* 기본 크기를 100%로 놓고, 그에 대한 상대적인 크기를 설정 */
+            }
+            #small {
+                font-size: 0.7em;
+                /* 해당 font의 기본 크기를 1em으로 놓고, 그에 대한 상대적인 크기를 설정 */
+            }
+            #fixed {
+                font-size: 20px;
+                /* 스크린의 픽셀을 기준으로 하는 절대적인 크기를 설정 */
+            }
+        </style>
+    </head>
+    <body>
+        <p id="large">Large!</p>
+        <p id="small">Small..</p>
+        <p id="fixed">Fixed</p>
+    </body>
+</html>

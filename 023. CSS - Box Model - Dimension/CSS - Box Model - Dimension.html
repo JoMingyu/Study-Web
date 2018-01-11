@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Box Model - Dimension</title>
+
+        <meta charset="utf-8">
+
+        <style>
+            div {
+                background-color: salmon;
+                /* width: 900px; */
+                height: 90px;
+                max-width: 900px;
+                /*
+                해당 요소가 가질 수 있는 최대 너비
+                기본값은 none이며, 해당 요소의 너비에 제한을 두지 않겠다는 의미
+                width 속성으로 너비를 설정하면 기본적으로 그 너비 이하로 브라우저의 크기가 줄어들 때 해당 요소에 스크롤바를 생성
+                하지만 max-width로 너비를 설정하면 브라우저의 크기에 맞춰 해당 요소의 너비도 자동으로 줄어듬
+                */
+                min-width: 500px;
+                /*
+                해당 요소가 가질 수 있는 최소 너비
+                기본값은 0이며, 해당 요소의 너비에 제한을 두지 않겠다는 의미
+                브라우저가 min-width로 설정된 너비 이하로 줄어들면 이 요소의 너비는 더 줄어들지 않고 스크롤 바를 생성하게 됨
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+        </div>
+    </body>
+</html>
