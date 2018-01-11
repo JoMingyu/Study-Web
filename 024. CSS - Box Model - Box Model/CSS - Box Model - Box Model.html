@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Box Model - Box Model</title>
+
+        <meta charset="utf-8">
+
+        <!--
+            모든 HTML 요소는 박스 모양으로 구성되며, 이것을 박스 모델이라고 부름
+            박스 모델은 HTML 요소를 content, padding, border, margin으로 구성함
+        -->
+        <style>
+            div {
+                background-color: salmon;
+                width: 320px;
+                padding: 50px;
+                /* 내용과 테두리 사이의 간격. 눈에 보이지 않음 */
+                border: 20px solid maroon;
+                /* 내용과 패딩 주변을 감싸는 테두리 */
+                margin: 50px;
+                /* 테두리와 이웃하는 요소 사이의 간격. 눈에 보이지 않음 */
+            }
+            /*
+            CSS에서 설정하는 height와 width는 내용(content) 부분만을 대상으로 함
+            따라서 HTML 요소의 너비를 구하기 위해서는
+            left margin + left border + left padding + content width + right padding + right border + right margin
+            */
+        </style>
+    </head>
+    <body>
+        <div>
+
+        </div>
+    </body>
+</html>
