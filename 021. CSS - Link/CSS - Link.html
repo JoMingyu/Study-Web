@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Link</title>
+
+        <meta charset="UTF-8">
+        
+        <!-- a 태그 링크 부분을 버튼 형태로 만들어 보자 -->
+        <style>
+            a {
+                background-color: #FFFFE0;
+                color: darkslategray;
+                font-size: 1.3em;
+                text-decoration: none;
+                /* 기본적으로 text decoration은 underline이므로 */
+                padding: 15px 25px;
+                /* 위아래 15px, 좌우 25px */
+                text-align: center;
+            }
+
+            a:link {
+                color: olive;
+            }
+
+            a:visited {
+                color: brown;
+            }
+
+            a:hover {
+                color: coral;
+            }
+
+            a:active {
+                color: khaki;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.github.com/JoMingyu" target="_blank">Link!</a>
+    </body>
+</html>
