@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Position - Display</title>
+
+        <meta charset="utf-8">
+
+        <!-- display 속성은 요소가 브라우저에서 어떤 방식으로 보이는가를 결정함 -->
+        <!-- block 형태의 div, inline 형태의 span으로 화면의 공간을 분할하곤 함 -->
+        <style>
+            div.block {
+                background-color: salmon;
+
+                width: 500px;
+                height: 80px;
+
+                display: block;
+                /* 언제나 새로운 line에서 시작하며, 해당 라인의 모든 너비를 차지함 */
+                /* div가 대표적인 block 요소 */
+            }
+
+            div.inline {
+                background-color: salmon;
+
+                display: inline;
+                /* 해당 요소의 내용(content)만큼만 차지  */
+                /* span, a, img 등이 대표적인 inline 요소 */
+            }
+
+            div.inline-block {
+                background-color: aqua;
+
+                /* margin-top: 80px; */
+                width: 500px;
+                height: 80px;
+
+                display: inline-block;
+                /* 해당 요소 자체는 inline처럼 동작하지만, 요소 내부는 block처럼 동작 */
+            }
+            /* display를 none으로 두면 해당 요소를 숨길 수 있음 */
+        </style>
+    </head>
+    <body>
+        <div class="block">
+            <p>hi!</p>
+        </div>
+        <div class="inline-block">
+            <p>hi!</p>
+        </div>
+    </body>
+</html>
