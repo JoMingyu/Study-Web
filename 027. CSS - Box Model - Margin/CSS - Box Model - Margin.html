@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - Box Model - Margin</title>
+
+        <meta charset="utf-8">
+
+        <!-- 마진은 박스 모델의 가장 겉부분 -->
+        <style>
+            div {
+                background-color: salmon;
+
+                width: 300px;
+                height: 80px;
+
+                margin-top: -25px;
+                /* margin을 음수로 설정하여 다른 요소의 위에 겹치게 할 수 있음 */
+                margin-right: 10px;
+                margin-bottom: 30px;
+                margin-left: 100px;
+
+                /* margin: -25px 10px 30px 100px; */
+                /* 축약 표현 가능 */
+                
+                /* margin: auto; */
+                /* 웹 브라우저가 수평 방향 마진을 자동으로 설정해줌. 결과적으로 그 요소를 포함하고 있는 부모 요소의 정중앙에 위치 */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+        </div>
+    </body>
+</html>
